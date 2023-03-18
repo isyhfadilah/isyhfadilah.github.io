@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,15 +30,15 @@
       class="h-1/2 w-full lg:h-screen bg-gradient-to-t from-[#2C2A4A] relative overflow-hidden"
     >
       <!-- navbar -->
-      <nav class="backdrop-blur-lg w-full fixed px-3 md:w-full lg:w-full">
-        <div class="container mx-auto py-5 flex items-center justify-between md:py-5 md:px-2 lg:px-10">
+      <nav class="bg-white bg-opacity-5 backdrop-blur-sm shadow-lg w-full fixed px-3 z-10 md:w-full lg:w-full">
+        <div class="container mx-auto py-5 flex items-center justify-between md:py-5 md:px-2 lg:px-10 lg:py-7">
           <div class="flex items-center bg-white rounded-full opacity-50">
             <span class="text-sm font-bold text-[#6B5B95] mx-5 sm:text-base"
               >Aisyah</span
             >
           </div>
           <ul
-            class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
+            class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase"
           >
             <li class="hover:text-gray-500">
               <a href="#">home</a>
@@ -90,6 +90,7 @@
         src="./img/profil.png"
         alt=""
       />
+
       <!-- circle -->
       <div
         class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-[#6B5B95] rounded-full -z-10"
@@ -97,7 +98,7 @@
 
       <!-- animated text -->
       <div
-        class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
+        class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-10 xl:left-48 xl:text-7xl font-bold -z-10"
       >
         <span class="text-gray-600">My</span>
         <p id="text" class="text-[#FF6B6B] text-shadow-md tetx-shadow-[#FF6B6B]"></p>
@@ -105,7 +106,7 @@
 
       <!-- texts -->
       <div
-        class="hidden lg:flex flex-col gap-5 rounded-md shadow-inner shadow-[#252525] absolute top-0 bottom-0 m-auto right-10 backdrop-blur-3xl dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3"
+        class="hidden lg:flex flex-col gap-5 rounded-md shadow-inner shadow-[#252525] absolute top-0 bottom-0 m-auto right-10 bg-transparent backdrop-blur-2xl p-6 h-fit w-1/3"
       >
         <h1 class="text-2xl font-bold text-[#FF6B6B]">Hi, I'm Aisyah Nur Fadilah</h1>
         <p class="text-gray-400">
@@ -120,16 +121,16 @@
     </div>
 
     <!-- about -->
-    <div id="about" class="p-10 sm:p-15 md:p-20 dark:bg-slate-900 gap-20 sm:flex-wrap lg:flex-nowrap">
+    <div id="about" class="p-10 sm:p-15 md:p-20 gap-20">
       <div
         class="container mx-auto py-4 flex flex-col-reverse lg:flex-row gap-20 sm:py-5"
       >
-        <div class="mx-auto flex flex-col gap-3">
+        <div class="mx-auto flex flex-col gap-3 lg:gap-5">
           <!-- <div class="text-center gap-3 py-3"> -->
             <h1 class="text-[#FF6B6B] font-bold text-center">ABOUT ME</h1>
-            <h1 class="text-2xl font-medium text-white text-center">Gabut? ngoding saja</h1>
+            <h1 class="text-2xl font-medium text-white text-center lg:text-3xl">Gabut? ngoding saja</h1>
             <p class="text-gray-400 text-center text-base">
-              Saya ialah seorang siswa yang tertarik dengan dunia IT. Saya mengambil jurusan Rekayasa Perangkat Lunak (RPL) di SMK Negeri 2 Sumedang dari tahun 2021 - sekarang. Saya memiliki banyak pengalaman di sana baik dalam proyek maupun kompetisi. Kemampuan saya sekarang masih berada pada tahap dasar. Saya dapat mengimplementasikan html dan css untuk saat ini. Pada css, saya sudah mempelajari beberapa framework yaitu tailwind dan bootstrap. Di bawah tercantum persentase kemampuan saya.
+              Saya ialah seorang siswa yang tertarik dengan dunia IT. Saya mengambil jurusan Rekayasa Perangkat Lunak (RPL) di SMKN 2 Sumedang. Kemampuan saya sekarang masih berada pada tahap dasar. Saya dapat mengimplementasikan html dan css untuk saat ini. Pada css, saya sudah mempelajari beberapa framework yaitu tailwind dan bootstrap. Di bawah tercantum persentase kemampuan saya.
             </p>
           <!-- </div> -->
           
@@ -178,19 +179,19 @@
     <div id="works" class="p-10 sm:p-15 md:p-20 bg-[#2C2A4A]">
       <div class="container mx-auto">
         <!-- top -->
-        <div class="flex flex-col gap-3 items-center">
+        <div class="flex flex-col gap-3 items-center lg:gap-5">
           <h1 class="text-[#FF6B6B] font-bold">PORTFOLIO</h1>
-          <h1 class="text-2xl text-white font-medium text-center">Works & Projects</h1>
+          <h1 class="text-2xl text-white font-medium text-center lg:text-3xl">Works & Projects</h1>
           <p class="text-center text-gray-400">
             Saya pernah membangun beberapa projects secara individu maupun tim. Biasanya saya menggunakan beberapa tools, seperti figma, visual studio code dan lain sebagainya.
           </p>
         </div>
 
         <!-- bottom -->
-        <div class="p-2 flex flex-wrap justify-center gap-10">
+        <div class="p-2 flex flex-wrap justify-center gap-10 lg:gap-5">
           <!-- card -->
           <div
-            class="container bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+            class="container bg-transparent w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
           >
 
             <img class="rounded-md w-full h-[200px] object-cover" src="./img/mevers.jpg" />
@@ -205,7 +206,7 @@
           </div>
           
           <div
-            class="container bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+            class="container bg-transparent w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
           >
 
             <img class="rounded-md w-full h-[200px] object-cover" src="./img/grojunio.jpg" />
@@ -220,7 +221,7 @@
           </div>
 
           <div
-            class="container bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+            class="container bg-transparent w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
           >
 
             <img class="rounded-md w-full h-[200px] object-cover" src="./img/jangi.jpg" />
@@ -235,7 +236,7 @@
           </div>
 
           <div
-            class="container bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+            class="container bg-transparent w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
           >
 
             <img class="rounded-md w-full h-[200px] object-cover" src="./img/rplsolutions.jpg" />
@@ -250,7 +251,7 @@
           </div>
    
           <div
-            class="container bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+            class="container bg-transparent w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
 
           >
 
@@ -266,7 +267,7 @@
           </div>  
    
           <div
-            class="container bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+            class="container bg-transparent w-full md:w-5/12 lg:w-2/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
 
           >
 
@@ -289,40 +290,40 @@
     <div id="contact" class="p-10 sm:p-15 md:p-20">
       <div class="container mx-auto">
         <!-- top -->
-        <div class="flex flex-col gap-3 items-center">
+        <div class="flex flex-col gap-3 items-center lg:gap-5">
           <h1 class="text-[#FF6B6B] font-bold">CONTACT</h1>
-          <h1 class="text-2xl font-medium text-white">Ada pertanyaan?</h1>
+          <h1 class="text-2xl font-medium text-white lg:text-3xl">Ada pertanyaan?</h1>
           <p class="text-center text-gray-400">
             Apakah Anda punya ide? Mari kita diskusikan dan lihat apa yang bisa kita lakukan bersama.
           </p>
         </div>
         <!-- bottom -->
-        <form class="mt-5 flex flex-col gap-5 items-center">
+        <form class="mt-5 lg:mt-10 flex flex-col gap-5 lg:gap-6 items-center">
           <input
-            class="p-2 w-full md:w-2/2 ring-1 ring-indigo-300 rounded-xl"
+            class="p-2 w-full md:w-2/2 lg:w-2/3 ring-1 ring-indigo-300 rounded-xl"
             type="text"
             placeholder="Name"
           />
           <input
-            class="p-2 w-full md:w-2/2 ring-1 ring-indigo-300 rounded-xl"
+            class="p-2 w-full md:w-2/2 lg:w-2/3 ring-1 ring-indigo-300 rounded-xl"
             type="email"
             placeholder="Email"
           />
           <textarea
-            class="p-2 w-full md:w-2/2 ring-1 ring-indigo-300 rounded-xl"
+            class="p-2 w-full md:w-2/2 lg:w-2/3 ring-1 ring-indigo-300 rounded-xl"
             cols="30"
             rows="10"
             placeholder="Message..."
           ></textarea>
           <a
-            class="w-1/2 md:w-2/2 bg-[#6B5B95] rounded-full text-white font-medium w-full py-1 md:py-2 cursor-pointer text-center hover:bg-slate-500"
+            class="w-1/2 md:w-2/2 lg:w-2/3 bg-[#6B5B95] rounded-full text-white font-medium w-full py-1 md:py-2 cursor-pointer text-center hover:bg-slate-500"
           >Submit</a>
         </form>
       </div>
     </div>
 
     <!-- footer -->
-    <div class="w-full bg-gray-800 px-10 py-5 sm:p-20">
+    <div class="w-full bg-gray-800 px-10 py-5 sm:p-20 lg:p-5">
       <div class="container mx-auto py-5 md:flex md:justify-around md:items-center">
         <div class="items-center gap-2">
           <span class="text-3xl font-semibold text-white">Aisyah</span>
