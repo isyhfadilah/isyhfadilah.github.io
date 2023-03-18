@@ -27,13 +27,13 @@
   <body class="font-nunito bg-slate-900">
     <!-- into section -->
     <div
-      class="h-1/2 lg:h-screen bg-gradient-to-t from-[#2C2A4A] relative overflow-hidden"
+      class="h-1/2 w-full lg:h-screen bg-gradient-to-t from-[#2C2A4A] relative overflow-hidden"
     >
       <!-- navbar -->
-      <nav class="backdrop-blur-md w-full fixed top-0  z-10 dark:bg-slate-900">
-        <div class="container mx-auto py-5 flex items-center justify-between">
-          <div class="flex items-center bg-white rounded-full">
-            <span class="text-xl font-bold mx-5 text-[#6B5B95] dark:text-white"
+      <nav class="backdrop-blur-lg w-full fixed px-3 md:w-full lg:w-full">
+        <div class="container mx-auto py-5 flex items-center justify-between md:py-5 md:px-2 lg:px-10">
+          <div class="flex items-center bg-white rounded-full opacity-50">
+            <span class="text-sm font-bold text-[#6B5B95] mx-5 sm:text-base"
               >Aisyah</span
             >
           </div>
@@ -94,6 +94,7 @@
       <div
         class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-[#6B5B95] rounded-full -z-10"
       ></div>
+
       <!-- animated text -->
       <div
         class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
@@ -101,6 +102,7 @@
         <span class="text-gray-600">My</span>
         <p id="text" class="text-[#FF6B6B] text-shadow-md tetx-shadow-[#FF6B6B]"></p>
       </div>
+
       <!-- texts -->
       <div
         class="hidden lg:flex flex-col gap-5 rounded-md shadow-inner shadow-[#252525] absolute top-0 bottom-0 m-auto right-10 backdrop-blur-3xl dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3"
@@ -118,15 +120,15 @@
     </div>
 
     <!-- about -->
-    <div id="about" class="px-20 py-28 dark:bg-slate-900 gap-20 sm:flex-wrap lg:flex-nowrap">
+    <div id="about" class="p-10 sm:p-15 md:p-20 dark:bg-slate-900 gap-20 sm:flex-wrap lg:flex-nowrap">
       <div
         class="container mx-auto py-4 flex flex-col-reverse lg:flex-row gap-20 sm:py-5"
       >
         <div class="mx-auto flex flex-col gap-3">
           <!-- <div class="text-center gap-3 py-3"> -->
             <h1 class="text-[#FF6B6B] font-bold text-center">ABOUT ME</h1>
-            <h1 class="text-3xl font-medium text-white text-center">Gabut? ngoding saja</h1>
-            <p class="text-gray-400 text-center">
+            <h1 class="text-2xl font-medium text-white text-center">Gabut? ngoding saja</h1>
+            <p class="text-gray-400 text-center text-base">
               Saya ialah seorang siswa yang tertarik dengan dunia IT. Saya mengambil jurusan Rekayasa Perangkat Lunak (RPL) di SMK Negeri 2 Sumedang dari tahun 2021 - sekarang. Saya memiliki banyak pengalaman di sana baik dalam proyek maupun kompetisi. Kemampuan saya sekarang masih berada pada tahap dasar. Saya dapat mengimplementasikan html dan css untuk saat ini. Pada css, saya sudah mempelajari beberapa framework yaitu tailwind dan bootstrap. Di bawah tercantum persentase kemampuan saya.
             </p>
           <!-- </div> -->
@@ -173,13 +175,13 @@
     </div>
    
     <!-- works -->
-    <div id="works" class="py-28 bg-[#2C2A4A]">
+    <div id="works" class="p-10 sm:p-15 md:p-20 bg-[#2C2A4A]">
       <div class="container mx-auto">
         <!-- top -->
         <div class="flex flex-col gap-3 items-center">
           <h1 class="text-[#FF6B6B] font-bold">PORTFOLIO</h1>
-          <h1 class="text-3xl text-white">Works & Projects</h1>
-          <p class="w-1/2 text-center text-gray-400">
+          <h1 class="text-2xl text-white font-medium text-center">Works & Projects</h1>
+          <p class="text-center text-gray-400">
             Saya pernah membangun beberapa projects secara individu maupun tim. Biasanya saya menggunakan beberapa tools, seperti figma, visual studio code dan lain sebagainya.
           </p>
         </div>
@@ -188,10 +190,10 @@
         <div class="p-2 flex flex-wrap justify-center gap-10">
           <!-- card -->
           <div
-            class="bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+            class="container bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
           >
 
-            <img class="rounded-md w-[300px] h-[200px] object-cover lg:[350px] md:[400px] sm:w-[600px]" src="./img/mevers.jpg" />
+            <img class="rounded-md w-full h-[200px] object-cover" src="./img/mevers.jpg" />
             <div class="py-5 px-2">
               <p class="text-white text-lg font-bold">Mevers</p>
               <p class="text-sm text-white">Website statis yang membahas mengenai metaverse dan diikut sertakan pada perlombaan difest 2023.</p>
@@ -203,10 +205,10 @@
           </div>
           
           <div
-            class="bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+            class="container bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
           >
 
-            <img class="rounded-md w-[300px] h-[200px] object-cover lg:[350px] md:[400px] sm:w-[600px]" src="./img/grojunio.jpg" />
+            <img class="rounded-md w-full h-[200px] object-cover" src="./img/grojunio.jpg" />
             <div class="py-5 px-2">
               <p class="text-white text-lg font-bold">GroJunio</p>
               <p class="text-sm text-white">Desain Website yang dibangun dengan tema start up dan diikut sertakan pada perlombaan itdri telkom.</p>
@@ -218,10 +220,10 @@
           </div>
 
           <div
-            class="bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+            class="container bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
           >
 
-            <img class="rounded-md w-[300px] h-[200px] object-cover lg:[350px] md:[400px] sm:w-[600px]" src="./img/jangi.jpg" />
+            <img class="rounded-md w-full h-[200px] object-cover" src="./img/jangi.jpg" />
             <div class="py-5 px-2">
               <p class="text-white text-lg font-bold">JanGi</p>
               <p class="text-sm text-white">Desain Website yang dibangun dengan ide awal jajanan dan diikut sertakan pada perlombaan dinamik17 upi.</p>
@@ -233,10 +235,10 @@
           </div>
 
           <div
-            class="bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+            class="container bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
           >
 
-            <img class="rounded-md w-[300px] h-[200px] object-cover lg:[350px] md:[400px] sm:w-[600px]" src="./img/rplsolutions.jpg" />
+            <img class="rounded-md w-full h-[200px] object-cover" src="./img/rplsolutions.jpg" />
             <div class="py-5 px-2">
               <p class="text-white text-lg font-bold">RPL Solutions</p>
               <p class="text-sm text-white">Website dinamis yang dapat membantu para siswa rpl yang merasa salah jurusan. Dibuat pada saat pelatihan telkom.</p>
@@ -248,10 +250,11 @@
           </div>
    
           <div
-            class="bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+            class="container bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+
           >
 
-            <img class="rounded-md w-[300px] h-[200px] object-cover lg:[350px] md:[400px] sm:w-[600px]" src="./img/expo.jpg" />
+            <img class="rounded-md w-full h-[200px] object-cover" src="./img/expo.jpg" />
             <div class="py-5 px-2">
               <p class="text-white text-lg font-bold">Expo Invitation</p>
               <p class="text-sm text-white">Desain Website sederhana yang dapat digunakan sebagai undangan digital ketika pameran berlangsung.</p>
@@ -263,10 +266,11 @@
           </div>  
    
           <div
-            class="bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+            class="container bg-transparent w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-105 rounded-md"
+
           >
 
-            <img class="rounded-md w-[300px] h-[200px] object-cover lg:[350px] md:[400px] sm:w-[600px]" src="./img/scholarship.jpg" />
+            <img class="rounded-md w-full h-[200px] object-cover" src="./img/scholarship.jpg" />
             <div class="py-5 px-2">
               <p class="text-white text-lg font-bold">Scholarship World</p>
               <p class="text-sm text-white">Desain Website pertama yang saya buat dan diikut sertakan pada perlombaan difest 2022.</p>
@@ -282,44 +286,44 @@
     </div>
 
     <!-- contact -->
-    <div id="contact" class="dark:bg-slate-900 py-28">
+    <div id="contact" class="p-10 sm:p-15 md:p-20">
       <div class="container mx-auto">
         <!-- top -->
         <div class="flex flex-col gap-3 items-center">
           <h1 class="text-[#FF6B6B] font-bold">CONTACT</h1>
-          <h1 class="text-3xl text-white">Ada pertanyaan?</h1>
-          <p class="w-1/2 text-center text-gray-400">
+          <h1 class="text-2xl font-medium text-white">Ada pertanyaan?</h1>
+          <p class="text-center text-gray-400">
             Apakah Anda punya ide? Mari kita diskusikan dan lihat apa yang bisa kita lakukan bersama.
           </p>
         </div>
         <!-- bottom -->
-        <form class="mt-5 p-8 flex flex-col gap-5 items-center">
+        <form class="mt-5 flex flex-col gap-5 items-center">
           <input
-            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-xl dark:bg-slate-800 dark:ring-0 dark:text-white"
+            class="p-2 w-full md:w-2/2 ring-1 ring-indigo-300 rounded-xl dark:bg-slate-800 dark:ring-0 dark:text-white"
             type="text"
             placeholder="Name"
           />
           <input
-            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-xl dark:bg-slate-800 dark:ring-0 dark:text-white"
+            class="p-2 w-full md:w-2/2 ring-1 ring-indigo-300 rounded-xl dark:bg-slate-800 dark:ring-0 dark:text-white"
             type="email"
             placeholder="Email"
           />
           <textarea
-            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-xl dark:bg-slate-800 dark:ring-0 dark:text-white"
+            class="p-2 w-full md:w-2/2 ring-1 ring-indigo-300 rounded-xl dark:bg-slate-800 dark:ring-0 dark:text-white"
             cols="30"
             rows="10"
             placeholder="Message..."
           ></textarea>
           <a
-            class="w-1/2 bg-[#6B5B95] rounded-full text-white font-medium px-3 py-2 cursor-pointer text-center hover:bg-[#fff]"
+            class="w-1/2 md:w-2/2 bg-[#6B5B95] rounded-full text-white font-medium w-full py-1 md:py-2 cursor-pointer text-center hover:bg-slate-500"
           >Submit</a>
         </form>
       </div>
     </div>
 
     <!-- footer -->
-    <div class="w-full bg-gray-800">
-      <div class="container mx-auto flex flex-wrap items-center justify-around py-5 sm:py-10">
+    <div class="w-full bg-gray-800 px-10 py-5 sm:p-15">
+      <div class="container mx-auto py-5 md:flex md:justify-around md:items-center">
         <div class="items-center gap-2">
           <span class="text-3xl font-semibold text-white">Aisyah</span>
           <h1 class="text-gray-500 text-xl font-semibold py-3">Temukan Saya</h1>
@@ -329,8 +333,8 @@
           <p class="text-gray-500 text-md">Sumedang</p>
         </div>
 
-        <div>
-          <h1 class="text-white font-semibold text-2xl py-3">Kategori Tautan</h1>
+        <div class="pt-5 md:pt-0">
+          <h1 class="text-white font-semibold text-xl py-3">Kategori Tautan</h1>
           <ul
           class="text-gray-500"
           >
@@ -352,7 +356,7 @@
 
       <div class="border border-gray-500 border-1"></div>
 
-      <div class="py-3">
+      <div class="py-0">
         <div class="flex justify-center items-center gap-2 py-3 text-xl text-white">
          <a class="fa-brands fa-instagram cursor-pointer" href="https://www.instagram.com/isyhfadilah/"></a>
          <a class="fa-brands fa-whatsapp cursor-pointer" href="https://wa.me/6282123937972"></a>
@@ -360,7 +364,7 @@
          <a class="fa-brands fa-linkedin-in cursor-pointer" href="https://www.linkedin.com/in/aisyah-nur-fadilah-bb41a3219/"></a>
         </div>
 
-        <span class="hidden md:block font-medium text-gray-500 text-sm text-center ">© 2023 Aisyah Nur Fadilah. All rights reserved.</span>
+        <p class="text-center text-gray-500 text-sm">© 2023 <span class="text-white font-light cursor-pointer">Aisyah Nur Fadilah</span>. All rights reserved.</p>
       </div>
     </div>
       
